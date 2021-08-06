@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@font-face {
+    font-family: Exoct350;
+    src: url(/font/Exotc350.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: papyrus;
+}
+body{
+    background-color: whitesmoke;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 25px 30px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+
+#background{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+#background >*{
+    height: 80%;
+    width: 19%;
+    
+}
+#background >img:nth-child(5){                    /*IMAGE OF SOME NACHOS AND TOMATOES SCATTERD*/
+    display: flex;
+    position: absolute;
+    height: 58%;
+    width:45%;
+    top: 30%;
+    left:55%;
+    
+}
+#background>img:nth-child(7){                    /*IMAGE OF A BLACK BLOCK WHICH IS SITUATED AT RIGHT SIDE OF THE SCREEN*/
+    margin-left: auto;
+    height:100vh;
+}
+#background>img:nth-child(8){                    /*IMAGE OF TABLES ~ BACKGROUND*/
+    margin-left: -8%;
+    position: absolute;
+    bottom: -225%;
+    width: 85%;
+    height: 90%;
+}
+#background>img:nth-child(9){                     /*IMAGE OF A BLACK BLOCK WHICH IS SITUATED AT RIGHT SIDE OF THE SCREEN*/
+    position: absolute;
+    right: 0;
+    height: 210%;
+    z-index: -1;
+
+}
+#background>img:nth-child(10){                   /*IMAGE of a chef*/
+    position: absolute;
+    bottom: -320%;
+    width: 40%;
+    right: 0;
+}
+#title-1{                                         /*~ A TASTE OF LOCAL FLAVOURS ~ HEADING*/
+    font-family: Exoct350;
+    font-size: 55px;
+    color: white;
+    position: absolute;
+    top: 23%;
+    left: 8%;
+    width: 100%;
+}
+#title-2{                                               /* "FAVOURITE MENU"~ HEADING */ 
+    font-family: Exoct350;
+    text-decoration: underline;
+    font-size:70px;
+    position: absolute;
+    bottom:-18% ;
+    left: 35%;
+    
+}
+#title-3 {                                       /*~ BOOK A TABLE ~ HEADING*/
+    font-size: 70px;
+    font-family: Exoct350;
+    position: absolute;
+    bottom: -115%;
+    left: 38%;
+    text-decoration: underline;
+}
+#title-4 {                                       /*~ CONTACT US ~ HEADING*/
+    font-size: 60px;
+    font-family: Exoct350;
+    position: absolute;
+    color: white;
+    bottom: -368%;
+    left: 34%;
+    z-index: 1;
+    text-decoration: underline;
+}
+#talk-about-apetito{                             /*"Let's talk about apetito" ~ HEADING*/
+    font-family: Exoct350;
+    font-size: 70px;
+    position: absolute;
+    bottom: -260%;
+    left: 7%;
+}
+#talk-about-apetito:after{                     /*"Let's talk about apetito" with apetito in red*/
+
+    content:attr(data-text);
+	color:rgb(176, 127, 62);
+	transform:translateX(-100%);
+	position:absolute;
+}
+div#scroll{                                    /*lorem ipsum text about apetito~ "let's talk about apetito"*/
+    font-size: 25px;
+    position: absolute;
+    bottom: -320%;
+    left: 7%;
+    margin:4px, 4px;
+    padding:4px;
+    width: 50%;
+    height: 53%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+
+}
+#desc{                                             /*lorem ipsum text below heading "a taste of local flavour"*/
+    font-size: 25px;
+    color: silver;
+    position: absolute;
+    top: 43%;
+    left: 8%;
+}
+.btn{                                              /*css of buttons*/
+    width:180px;
+    height: 50px;
+    font-size: 1.2em;
+    background: linear-gradient(to right, rgb(201, 186, 186), black);
+    border: none;
+    margin:30px;
+    outline: 1px solid rgb(255, 255, 255);
+    /* padding:10px; */
+    cursor:pointer;
+    color: white;
+    transition:all 250ms;
+    /* position: absolute; */
+    /* top: 500px; */
+    /* left: 0; */
+}
+.btn1{                                            /*"Let's Eat" ~ button*/
+    position: absolute;
+    top: 480px;
+    left: 100px;
+}
+.btn2{                                            /*"Book a Table" ~ button*/
+    position: absolute;
+    top: 480px;
+    left: 320px;
+}
+.btn:hover{
+    outline-offset: -8px;
+    border: 1px solid rgb(255, 251, 251);
+    color: rgb(255, 249, 249);
+    background: none;
+    overflow: hidden;
+}
+.btn:nth-child(2){
+    outline-offset: -4px;
+}
+.btn:nth-child(2):hover{
+    outline-offset: 4px;
+}
+.btn:nth-child(1){
+    outline-offset: 4px;
+}
+.btn:nth-child(1):hover{
+    outline-offset:-8px;
+}
+#background >img:nth-child(6){                           /*IMAGE OF A COFFEE USED IN BACKGROUND*/
+    position: absolute;
+    top: 600px;
+    width: 25%;
+    height: 45%;
+    left: 0;
+}
+@media (min-width: 768px) {
+    ul{
+        flex-direction: row;
+    }
+
+}
+#fav-desc{                                              /*VIEW ALL ~ BELOW HEADING OF"FAVOURITE MENU"*/
+    color: rgba(149, 102, 70, 0.768);
+    font-size: 20px;
+    text-decoration: none;
+    position: absolute;
+    top: 120%;
+    left: 58%;
+}
+.fav-img{                                               /*IMAGES OF FAVOURITE MENU*/
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+
+.box{
+    width: 350px;
+    height: 350px;
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.590);
+    display: flex;
+    justify-content:center;
+    position: relative;
+    transition: all .4s;
+    cursor: pointer;
+}
+.box img{
+    width: 300px;
+    height: 300px;
+    margin-top: 25px;
+}
+.box:nth-child(1),
+.box:nth-child(4){
+    transform: scale(0.9);
+}
+.box:hover{
+    height:400px;
+}
+.box .details{
+    position:absolute;
+    bottom: 30px;
+    left: 25px;
+    display:flex;
+    opacity: 0;
+    color: rgb(54, 54, 54);
+    font-size: 1.2rem;
+    z-index: 1;
+    transition: all .4s;
+}
+.box i{
+    margin-right: 5px;
+}
+.box:hover .details{
+    opacity: 1;
+    transition: all .4s;
+}
+.details::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 8px;
+    background: linear-gradient(to right, #0ed2f7, #b2effA);
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.8;
+    transform: scaleX(0);
+    transition:all .4s;
+    transition-delay: .3s;
+    border-radius: 10px;
+    transform-origin: left;
+}
+.box:hover .details::before{
+    transform: scaleX(1);
+}
+
+
+   /*<----------------------------------------------------BOOK A TABLE FORM--------------------------------------------------->*/
+
+
+
+   /* Add padding to containers */
+   .container01 {
+    text-align: center;
+    padding: 16px;
+    padding-right: 40PX;
+    font-family: papyrus;
+    background-color: rgb(47, 47, 47);
+    width: 40%;
+    position: absolute;
+    right:0;
+    bottom:-225% ;
+  
+}
+h1#reg-table{
+    font-family:Exoct350 ;
+    font-size: 50px;
+    color: white;
+    text-decoration: underline;
+    /* margin-bottom: 15px; */
+    padding-bottom:10px;
+    padding-top:10px;
+}
+p#reg-ad{
+    padding-bottom:10px;
+    padding-top:10px;
+    color: white;
+    font-size: 15px;
+}
+.name{
+    display: flex;
+    margin:0;
+    justify-content: space-between;
+
+}
+.information{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+input[type=text] {
+    font-size: 15px;
+    font-family: papyrus;
+    width: 45%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=Information]{
+    font-size: 15px;
+    font-family: papyrus;
+    width: 45%;
+    padding: 20px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+}
+
+
+input[type=text]:focus, input[type=information]:focus {
+   background-color: #ddd;
+   outline: none;
+}
+
+hr {                                                 /* Overwrite default styles of hr */
+
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+    margin-left: 18px;
+}
+
+#reg-btn{                                           /*Register button*/
+    width: 97%;
+    margin-left: 20px;
+}
+
+
+#footer{
+    background-color: black;
+    position: absolute;
+    bottom: -420%;
+    height: 70%;
+    width: 100%;
+}
+#logo-red{
+    position: absolute;
+    top: 15%;
+    margin-left: 60px;
+    height: 70%;
+    width: 23%;
+    background-color: #b35956;
+    border-radius: 8%;
+}
+#logo{
+    position: absolute;
+    width: 27%;
+    margin-left: 20px;
+    top:15%;
+}
+#logo-apetito{
+    font-family: bradley hand itc;
+    font-size:70px;
+    color:#feb56b;
+    text-shadow: 4px 6px 10px rgb(19, 18, 18);
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 74px;
+    z-index: 1;
+}
+#footer-p {
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 28%;
+    left: 33%;
+    
+}
+#contact-icon{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top:58%;
+    width: 4%;
+    right: 18%;
+}
+.contact-text{
+    color: white;
+    font-size: 20px;
+    top:60%;
+    z-index: 1;
+    right: 2%;
+}
